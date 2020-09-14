@@ -12,6 +12,7 @@ const Edit = ({ id }) => {
   };
 
   const handleSubmit = async (e) => {
+    const form = e.target;
     setLoading(true);
     e.preventDefault();
     try {
@@ -23,6 +24,7 @@ const Edit = ({ id }) => {
       });
       setArticleData(null);
       setLoading(false);
+      form.reset();
       console.log(articleData);
     } catch (error) {
       console.log(error);

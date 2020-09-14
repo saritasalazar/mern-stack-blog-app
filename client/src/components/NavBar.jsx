@@ -22,7 +22,14 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav className="mr-auto"></Nav>
+            <Nav.Link className="mr-auto" href="/">
+              View All Posts
+            </Nav.Link>
+          </Nav>
+          <Nav className="ml-auto">
+            <Nav.Link className="mr-2" href="/manage">
+              Manage My Content
+            </Nav.Link>
           </Nav>
           <Nav>
             <Nav.Item>
@@ -40,7 +47,6 @@ const NavBar = () => {
                   />
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                  <Nav.Link href="/manage">Manage Content</Nav.Link>
                   <Logout />
                 </Dropdown.Menu>
               </Dropdown>

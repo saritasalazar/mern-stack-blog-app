@@ -11,7 +11,7 @@ const ArticleForm = () => {
   };
 
   const handleSubmit = async (e) => {
-    console.log(e.target.value);
+    const form = e.target;
     e.preventDefault();
     try {
       await axios({
@@ -22,6 +22,7 @@ const ArticleForm = () => {
       });
       setArticleData(null);
       setLoading(false);
+      form.reset();
     } catch (error) {
       console.log(error);
     }

@@ -18,6 +18,7 @@ const Comments = ({ id }) => {
   };
 
   const handleSubmit = async (e) => {
+    const form = e.target;
     setLoading(true);
     e.preventDefault();
     try {
@@ -28,6 +29,7 @@ const Comments = ({ id }) => {
       });
       setCommentData(null);
       setLoading(false);
+      form.reset();
     } catch (error) {
       console.log(error);
     }

@@ -8,26 +8,22 @@ import '../components/Comment.css';
 import './Article.css';
 
 const AllPosts = () => {
-  const {
-    setArticle,
-    filteredArticles,
-    setFilteredArticles,
-    setLoading
-  } = useContext(AppContext);
+  const { filteredArticles, setFilteredArticles, setLoading } = useContext(
+    AppContext
+  );
 
   useEffect(() => {
     setLoading(true);
     axios
       .get('/articles', { withCredentials: false })
       .then((response) => {
-        setArticle(response.data);
         setFilteredArticles(response.data);
         setLoading(false);
       })
       .catch((error) => {
         console.log(error);
       });
-  }, [setLoading, setFilteredArticles, setArticle]);
+  }, [setLoading, setFilteredArticles]);
 
   return (
     <MDBContainer className="d-flex justify-content-center">

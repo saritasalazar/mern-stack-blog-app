@@ -3,7 +3,6 @@ const mongoose = require('mongoose'),
   bcrypt = require('bcryptjs'),
   jwt = require('jsonwebtoken'),
   Article = require('./article');
-Comment = require('./comment');
 
 const userSchema = new mongoose.Schema(
   {

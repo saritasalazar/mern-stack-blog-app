@@ -17,7 +17,7 @@ const Article = ({ articles }) => {
           <td>
             <a href={`/article/${article._id}`}>
               <MDBBtn color="coral" type="submit" size="md">
-                EDIT
+                VIEW/EDIT
               </MDBBtn>
             </a>
             <Delete id={article._id} />
