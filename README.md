@@ -1,5 +1,7 @@
 # MERN Stack Blog App
 
+Full stack blog application that allows a user to sign up for an account and mangage their blog content. 
+
 ## User Story:
 
 - As a writer, I can login into the system so I can have access to my blog posts.
