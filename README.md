@@ -17,7 +17,7 @@
 - `yarn install`
 - `cd client && yarn install`
 
-- In your .env add your MONGODBURL and JWTSECRET (see sample.env)
+- In your `.env` add your `MONGODBURL` and `JWTSECRET` (see sample.env)
 
 ## Available build commands
 
