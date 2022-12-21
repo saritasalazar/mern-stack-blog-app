@@ -31,24 +31,23 @@ Open [http://localhost:3000](http://localhost:3000) to view your local React app
 
 ### Packages- Client Side
 
-- `yarn add axios`
-- `yarn add mdbreact`
-- `yarn add moment`
-- `yarn add react-bootstrap`
-- `yarn add react-router-dom`
-- `yarn add sweetalert`
+- `axios`
+- `mdbreact`
+- `react-bootstrap`
+- `react-router-dom`
+- `sweetalert`
 
 ### Packages- Server Side
 
-- `yarn add bcryptjs`
-- `yarn add concurrently`
-- `yarn add cookie-parser`
-- `yarn add cookie-session`
-- `yarn add cors`
-- `yarn add express`
-- `yarn add jsonwebtoken`
-- `yarn add moment`
-- `yarn add mongoose`
-- `yarn add passport`
-- `yarn add passport-jwt`
-- `yarn add validator`
+- `bcryptjs`
+- `concurrently`
+- `cookie-parser`
+- `cookie-session`
+- `cors`
+- `express`
+- `jsonwebtoken`
+- `moment`
+- `mongoose`
+- `passport`
+- `passport-jwt`
+- `validator`
